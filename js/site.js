@@ -199,7 +199,7 @@ function SetSlidePreview(slideIndex) {
 
 function GetCurrentPresentation() {
     // Send the request to ProPresenter
-    webSocket.send('{"action":"presentationCurrent", "presentationSlideQuality": 100}');
+    webSocket.send('{"action":"presentationCurrent", "presentationSlideQuality": ' + quality + '}');
 }
 
 function GetCurrentSlide() {
